@@ -319,3 +319,210 @@ WaylandEnable=false
 Данное ПО прошло настройку и готово к использованию.
 Проверка масштабирования:
 Результат: кнопки Android studio читаемые, интерфейс оптимального размера. Проверка цветопередачи. В качестве старого ПО был взят GIMP
+
+
+
+
+
+
+==================================================================================================================================================================================
+
+...## 🧑‍💻 1. Программист общего профиля (C/C++/Python/Java)
+
+Основные инструменты:
+# Компиляторы
+sudo apt install build-essential clang openjdk-17-jdk -y
+
+# Системы сборки
+sudo apt install cmake make -y
+
+# Контроль версий
+sudo apt install git -y
+
+# IDE
+sudo snap install code --classic     # Visual Studio Code
+sudo snap install intellij-idea-community --classic
+sudo snap install pycharm-community --classic
+
+# Отладка
+sudo apt install gdb valgrind -y
+...---
+
+## 🤖 2. ML / AI разработчик
+
+Основные инструменты:
+# Python и менеджер пакетов
+sudo apt install python3 python3-pip python3-venv -y
+
+# Основные библиотеки
+pip install numpy pandas scikit-learn matplotlib jupyterlab torch tensorflow
+
+# IDE
+sudo snap install code --classic
+sudo snap install pycharm-community --classic
+
+# Контейнеризация
+sudo apt install docker.io docker-compose -y
+...---
+
+## 📱 3. Android-разработчик
+
+Основные инструменты:
+# Java SDK
+sudo apt install openjdk-17-jdk -y
+
+# Gradle
+sudo apt install gradle -y
+
+# Git
+sudo apt install git -y
+
+# Android Studio
+sudo snap install android-studio --classic
+
+# SDK и эмулятор (через Android Studio или командно)
+# sdkmanager "platform-tools" "platforms;android-34" "system-images;android-34;default;x86_64"
+# avdmanager create avd -n test_device -k "system-images;android-34;default;x86_64"
+...---
+
+## 🕶 4. AR/VR разработчик
+
+Основные инструменты:
+# Unity Hub
+sudo snap install unityhub --classic
+
+# Blender
+sudo apt install blender -y
+
+# Vulkan SDK
+sudo apt install vulkan-tools mesa-utils -y
+
+# Git
+sudo apt install git -y
+...---
+
+## 🌐 5. Веб-разработчик
+
+Frontend:
+# Node.js и npm
+sudo apt install nodejs npm -y
+
+# Альтернативно — последняя версия через NodeSource:
+# curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+# sudo apt install -y nodejs
+
+# Git и IDE
+sudo apt install git -y
+sudo snap install code --classic
+...Backend (Python, PHP, JS):
+# Python + Flask
+sudo apt install python3 python3-pip -y
+pip install flask django
+
+# PHP + Apache
+sudo apt install apache2 php libapache2-mod-php -y
+
+# Node.js + Express
+npm install -g express-generator
+
+# Базы данных
+sudo apt install mysql-server postgresql -y
+...---
+
+## 🐧 6. Системный администратор / DevOps
+
+Основные инструменты:
+# Сетевые утилиты и мониторинг
+sudo apt install openssh-server net-tools htop nmap ufw -y
+
+# Контроль версий
+sudo apt install git -y
+
+# Контейнеризация
+sudo apt install docker.io docker-compose -y
+
+# Автоматизация и оркестрация
+sudo apt install ansible -y
+sudo snap install kubectl --classic
+sudo snap install helm --classic
+
+# Виртуализация
+sudo apt install qemu-kvm virt-manager -y
+...---
+
+## 🧱 7. Разработчик игр
+
+Основные инструменты:
+# Unity / Godot
+sudo snap install unityhub --classic
+sudo snap install godot --classic
+
+# Blender
+sudo apt install blender -y
+
+# Vulkan / OpenGL
+sudo apt install vulkan-tools mesa-utils -y
+
+# Git и IDE
+sudo apt install git -y
+sudo snap install code --classic
+...---
+
+## ⚙️ 8. Встроенные системы / IoT-разработчик
+
+Основные инструменты:
+# Кросс-компилятор и сборка
+sudo apt install gcc-arm-none-eabi make cmake -y
+
+# Эмулятор и мониторинг портов
+sudo apt install qemu-system minicom -y
+
+# IDE и Git
+sudo snap install code --classic
+sudo apt install git -y
+...---
+
+## ☁️ 9. Cloud-разработчик / администратор
+
+Основные инструменты:
+# Docker и Kubernetes
+sudo apt install docker.io docker-compose -y
+sudo snap install kubectl --classic
+sudo snap install helm --classic
+
+# Terraform
+sudo snap install terraform --classic
+
+# Мониторинг
+sudo apt install prometheus grafana -y
+
+# Git
+sudo apt install git -y
+...---
+
+## 🔬 10. Научный исследователь / инженер данных
+
+Основные инструменты:
+# Python + библиотеки
+sudo apt install python3 python3-pip -y
+pip install numpy pandas scipy matplotlib jupyterlab
+
+# R и RStudio
+sudo apt install r-base -y
+sudo snap install rstudio --classic
+
+# Git и LaTeX
+sudo apt install git texlive-full -y
+...---
+
+## 🧠 Что может пригодиться всем
+
+
+# Менеджеры пакетов
+sudo apt install snapd flatpak gnome-software-plugin-flatpak -y
+
+# Контроль версий
+sudo apt install git -y
+
+# Архиваторы, curl, wget
+sudo apt install zip unzip curl wget -y
